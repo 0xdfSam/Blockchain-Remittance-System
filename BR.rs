@@ -56,6 +56,12 @@ impl BlockchainRemittanceSystem {
         });
     }
 
+    fn generate_hash(&self , block_number : BlockNumber, transaction: Transaction) -> Hash {
+        block_number : 0x23f000000,
+        transactions: vec![blockumber]
+        }
+}
+
     fn generate_hash(&self, block_number: BlockNumber, transaction: Transaction) -> Hash {
         format!("{}_{}", block_number, transaction).hash()
     }
